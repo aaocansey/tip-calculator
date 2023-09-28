@@ -1,0 +1,152 @@
+:root {
+    --primary-color: hsl(189, 41%, 97%);
+    --secondary-color: hsl(183, 100%, 15%);
+    --btnhover-color: hsl(172, 67%, 45%);
+}
+
+.main {
+    background: hsl(185, 41%, 84%);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 25rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+}
+
+.spliter {
+    border-radius: 20px;
+    background: white;
+    padding: 3rem;
+}
+
+.totals {
+    background: var(--secondary-color);
+}
+
+.sectOne {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.billInput {
+    padding: 1rem;
+    background: var(--primary-color);
+}
+
+.billInput input {
+    border: none;
+    outline: none;
+    background: var(--primary-color);
+    width: 90%;
+    text-align: right;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Space Mono';
+}
+
+.selectTip,
+.bill,
+.noPeople {
+    margin-bottom: 2rem;
+}
+
+.tipButtons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tipButtons button {
+    color: white;
+    margin: 10px;
+    background: var(--secondary-color);
+    font-weight: 700;
+}
+
+.tipButtons button:hover {
+    background: var(--btnhover-color);
+    color: var(--secondary-color);
+}
+
+.totals {
+    padding: 1.5rem;
+    color: white;
+    border-radius: 20px;
+}
+
+.tipDisplay,
+.totalDisplay {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.totalvalue {
+    font-size: 4rem;
+    color: var(--btnhover-color);
+}
+
+.tipInput {
+    border-radius: 10px;
+    width: 11rem;
+    margin-left: 10px;
+}
+
+.totals button {
+    font-size: large;
+    margin: 5rem 0 0 0;
+    width: 100%;
+    background: var(--btnhover-color);
+    color: var(--secondary-color);
+}
+
+@media only screen and (min-width:600px) {
+    .main {
+        justify-content: center;
+        align-items: center;
+        padding: 10rem;
+    }
+
+    .spliter {
+        display: flex;
+    }
+
+    .sectOne {
+        margin: 5rem;
+    }
+
+    .totals {
+        margin: 5rem;
+        width: 30rem;
+    }
+
+    .totals button {
+        margin-top: 5rem;
+    }
+
+    .tipDisplay,
+    .totalDisplay {
+        margin: 5rem 0;
+    }
+
+    .tipButtons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tipInput {
+        
+        width: 7.5rem;
+        
+    }
+
+    /* .totals button {
+        margin: 2rem 0 0 0;
+    } */
+}
